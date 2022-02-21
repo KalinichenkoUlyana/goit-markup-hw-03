@@ -96,6 +96,10 @@ img {
   background-color: inherit;
   color: var(--title-text-color);
 }
+
+.site-nav-item > .link {
+  color: var(--title-text-color);
+}
 .site-nav-item:last-child {
   margin-right: 0px;
 }
@@ -104,7 +108,7 @@ img {
   color: var(--accent-color);
 }
 
-.current {
+.link.current {
   color: var(--accent-color);
 }
 .contacts {
@@ -221,23 +225,29 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
+.members-team {
+  margin-bottom: 50px;
+}
 .members {
   background-color: #f5f4fa;
 }
 .member-list {
   display: flex;
-  margin-left: -30px;
+  /* margin-left: -30px;*/
 }
 
 .member-list-description {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-left: 30px;
-  margin-top: 50px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.member-list-description:first-child {
+  margin-left: 0;
+}
+
 .members-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -269,6 +279,12 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.adress-list-item {
+  margin-bottom: 9px;
+}
+.adress-list-item:last-child {
+  margin-bottom: 0px;
 }
 .map {
   color: #ffffff;
